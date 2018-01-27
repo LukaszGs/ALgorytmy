@@ -87,3 +87,62 @@ public class Game {
         }
     }
 }
+/*
+
+import java.util.Scanner;
+        import java.util.Random;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Random rand = new Random();
+        Scanner sc = new Scanner(System.in);
+        int iloscGier = 0;
+        int iloscZwyciestw = 0;
+        Figury figura;
+
+        while (true) {
+            iloscGier += 1;
+            int f = rand.nextInt(2);
+            switch (f) {
+                case 0:
+                    figura = Figury.PAPIER;
+                    break;
+                case 1:
+                    figura = Figury.KAMIEN;
+                    break;
+                default:
+                    figura = Figury.NOZYCE;
+            }
+
+            System.out.println("Podaj figurę (p/k/n), " +
+                    "lub wyjdz z gry (q) \n");
+            Figury figura1;
+            String p, k, n, q;
+            String figuraPodana = sc.nextLine();
+
+            System.out.println(figura);
+
+            if (figura1 == Figury.PAPIER && figura == Figury.PAPIER ||
+                    figura1 == Figury.NOZYCE && figura == Figury.NOZYCE ||
+                    figura1 == Figury.KAMIEN && figura == Figury.KAMIEN) {
+                System.out.println("Remis.\n");
+            } else if (figura1 == Figury.KAMIEN && figura == Figury.NOZYCE ||
+                    figura1 == Figury.PAPIER && figura == Figury.KAMIEN ||
+                    figura1 == Figury.NOZYCE && figura == Figury.PAPIER) {
+                System.out.println("Gracz wygrywa\n");
+                iloscZwyciestw += 1;
+            } else if (figura == Figury.KAMIEN && figura1 == Figury.NOZYCE ||
+                    figura == Figury.PAPIER && figura1 == Figury.KAMIEN ||
+                    figura == Figury.NOZYCE && figura1 == Figury.PAPIER) {
+                System.out.println("Komputer wygrywa\n");
+            } else if (sc.nextLine().equals(q)) {
+                double procent = iloscZwyciestw / iloscGier;
+                System.out.printf("Wygrano %d z %d gier (%.2f)\n." +
+                                " Zakonczono program", iloscZwyciestw,
+                        iloscGier, procent);
+            }
+        }
+    }
+}
+*/

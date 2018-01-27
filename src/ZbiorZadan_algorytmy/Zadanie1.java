@@ -28,7 +28,7 @@ public class Zadanie1 {
         dzien = p + 1;
         miesiac = (int) Math.floor((h + l - 7 * m + 114) / 31);
         String miesiac1 = (miesiac == 3) ? "Marca" : "Kwietnia";
-        System.out.printf("wielkanoc w roku %d wypada %d.%s", rok, dzien, miesiac1);
+        System.out.printf("wielkanoc w roku %d wypada %d %s", rok, dzien, miesiac1);
 
 
     }
